@@ -1,0 +1,294 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="icons/foundation-icons.css" />
+
+    <style type="text/css">
+
+      @font-face { 
+        font-family: 'Parisian';
+        src: url('fonts/paris.otf') format('opentype'); 
+      }
+
+
+      *{
+        font-family: Roboto;
+      }
+      /*NAVIGATION*/
+      .top-bar-right{
+        margin-right: 50px;
+      }
+
+      .top-bar ul li a{
+        font-size: 12pt;
+        color: #ffa800;
+        letter-spacing: 4px;
+      }
+
+      .top-bar, .top-bar ul li a{
+        background-color: #fff;
+      }
+
+      .top-bar ul li a:hover{
+        color: #65f413;
+      }
+
+      .logo{
+        margin-left: 50px;
+      }
+
+      .fixed{
+        height: 10vh;
+      }
+
+      /*ACCORDION MENU*/
+      .title-bar{
+        background-color: #fff;
+        color: #ffa800;
+        font-weight: normal;
+        font-size: 12pt;
+      }
+
+      .menu-icon{
+
+       }
+
+      /*HERO*/
+      .hero-section{
+        background: url("images/hero.jpg") 100% no-repeat;
+        background-size: cover;
+        height: 50vh;
+        background-attachment: fixed;
+        background-position: center;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+      .header{
+        color: #ffa800;
+        font-size: 72pt;
+        font-weight: bold;
+        font-family: Parisian;
+        -webkit-animation: colorchange 5s;
+        animation: colorchange 5s;
+
+       }
+
+      @-webkit-keyframes colorchange {
+        from { color: #000; }
+        to {color: #ffa800;}
+
+       }
+
+      @keyframes colorchange{
+        from { color: #000; }
+        to {color: #ffa800;}
+       }
+
+      .header-grid{
+        text-align: center;
+        vertical-align: middle;
+
+      }
+
+      .custom-font{
+        font-size: 32pt;
+      }
+
+      .header-grid > .custom-font{
+        font-family: Parisian;
+        color: #c7c4c5;
+        position: relative;
+        text-decoration: none;
+
+      }
+
+      .header-grid > .custom-font:hover{
+        color: #ffa800;
+      }
+
+      .header-grid > .custom-font:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #65f413;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
+
+      .header-grid > .custom-font:hover:before{
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+
+      .text{
+        padding: 50px;
+
+      }
+
+      .fi-list{
+      	color: #c7c4c5;
+      	margin: 10px;
+      	font-size: 18pt;
+      }
+    
+
+
+      video{
+        width: 100% ;
+        height: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+
+
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="fixed">
+        <div class="top-bar" data-topbar role="navigation">
+          <div class="logo-wrapper">
+            <div class="logo">
+              <img class="logo_img" src="images/logo_schrift.png" width="100" height="80">
+            </div>
+          </div>
+
+          <div class="title-bar" data-responsive-toggle="resmenu" data-hide-for="medium">
+            <i class="fi-list" data-toggle="resmenu"></i>
+            <div class="title-bar-title">Men&uuml; </div>
+          </div>
+
+          <div class="top-bar-right" data-magellan  id="resmenu">
+            <ul class="vertical medium-horizontal menu dropdown menu" data-dropdown-menu>
+              <li><a href="">&Uuml;BER UNS</a>
+                <ul class="menu">
+                  <li><a href="#video1">ENTDECKE</a></li>
+                  <li><a href="#video2">ERLEBE</a></li>
+                  <li><a href="#video3">ENTSCHEIDE</a></li>
+                </ul>
+              </li>
+              <li><a href="informationen.html">INFORMATIONEN</a></li>
+              <li><a href="kontakt.html">KONTAKT</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="hero-section">
+        <h1 class="header"> Insight </h1> 
+      </section>
+
+      <div class="grid-x align-middle" id="video1">
+        <div class="medium-12 large-6 cell">
+          <video width="100%" height="100%" preload="none" controls poster="images/explore.png">
+            <source src="videos/wow.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="medium-12 large-6 cell">
+          <h1 class="header-grid">
+            <span class="custom-font">Step 1: Entdecke die Medientechnik </span>
+          </h1>
+         
+          <p class="text">
+            Spicy jalapeno bacon ipsum dolor amet jerky ball tip andouille bacon. Strip steak chicken 
+            shoulder bresaola, pastrami biltong corned beef salami sausage shankle pig ndouille.
+            Short loin jowl chuck pancetta boudin alcatra hamburger ball tip spare ribs meatball. 
+            Beef drumstick rump ham hock salami, ball tip doner chuck boudin. Shoulder venison spare 
+            ribs pork loin pastrami, chuck fatback andouille. Ham cow lcatra beef ribs sirloin, 
+            strip steak cupim picanha.
+          </p>
+        </div>
+        
+
+        
+      </div>
+
+      <div class="grid-x align-middle" id="video2">
+
+        <div class="medium-12 large-6 cell">
+          <h1 class="header-grid">
+            <span class="custom-font">Step 2: Erlebe die Htl</span>
+          </h1>
+          <p class="text">
+            Spicy jalapeno bacon ipsum dolor amet jerky ball tip andouille bacon. Strip steak chicken 
+            shoulder bresaola, pastrami biltong corned beef salami sausage shankle pig ndouille.
+            Short loin jowl chuck pancetta boudin alcatra hamburger ball tip spare ribs meatball. 
+            Beef drumstick rump ham hock salami, ball tip doner chuck boudin. Shoulder venison spare 
+            ribs pork loin pastrami, chuck fatback andouille. Ham cow alcatra beef ribs sirloin, 
+            strip steak cupim picanha.
+          </p>
+        </div>
+
+        <div class="medium-12 large-6 cell">
+          <video width="100%" height="100%" preload="none" controls poster="images/experience.png">
+            <source src="videos/wow.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        
+      </div>
+
+      <div class="grid-x align-middle" id="video3">
+
+        <div class="medium-12 large-6 cell">
+          <video width="100%" height="100%" preload="none" controls poster="images/decide.png">
+            <source src="videos/wow.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="medium-12 large-6 cell">
+          <h1 class="header-grid">
+            <span class="custom-font">Step 3: Treffe die richtige Entscheidung</span>
+          </h1>
+          <p class="text">
+            Spicy jalapeno bacon ipsum dolor amet jerky ball tip andouille bacon. Strip steak chicken 
+            shoulder bresaola, pastrami biltong corned beef salami sausage shankle pig ndouille.
+            Short loin jowl chuck pancetta boudin alcatra hamburger ball tip spare ribs meatball. 
+            Beef drumstick rump ham hock salami, ball tip doner chuck boudin. Shoulder venison spare 
+            ribs pork loin pastrami, chuck fatback andouille. Ham cow alcatra beef ribs sirloin, 
+            strip steak cupim picanha.<br> <br>
+
+            Bist du bereit die Medientechnik zu entdecken? <br>
+            <a class="button" src=""> F&uuml;hre mich dorthin </a>
+          </p>
+        </div>
+
+        
+
+        
+      </div>
+
+      
+    
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
